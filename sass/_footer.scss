@@ -1,0 +1,76 @@
+@import './import';
+
+footer {
+    height: 40vh;
+    background-color: $color--black;
+}
+
+.footer_area {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    // background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+
+    &-logo {
+        align-self: center;
+        justify-self: center;
+        img {
+            width: 60%;
+        }
+    }
+
+    &-data, &-products {
+        align-self: center;
+        h2,li, a {
+            margin:  2rem 0;
+            color: white;
+        }
+
+        a {
+            &:hover {
+                color: grey;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        li {
+            font-size: 1.5rem;
+        }
+    }
+
+    &-partenaires {
+        align-self: center;
+        h2,li, a {
+            margin:  2rem 0;
+            color: white;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 110%;
+            filter: grayscale(.8);
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}

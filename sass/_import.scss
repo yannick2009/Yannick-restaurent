@@ -1,0 +1,45 @@
+//FONT
+
+@font-face {
+    font-family: 'Lato';
+    src: url("/font/Lato/Lato-Black.ttf") format("ttf"),
+        url("/font/Lato/Lato-BlackItalic.ttf") format("ttf"),
+        url("/font/Lato/Lato-Bold.ttf") format("ttf"),
+        url("/font/Lato/Lato-BoldItalic.ttf") format("ttf"),
+        url("/font/Lato/Lato-Italic.ttf") format("ttf"),
+        url("/font/Lato/Lato-Light.ttf") format("ttf"),
+        url("/font/Lato/Lato-LightItalic.ttf") format("ttf"),
+        url("/font/Lato/Lato-Regular.ttf") format("ttf"),
+        url("/font/Lato/Lato-Thin.ttf") format("ttf"),
+        url("/font/Lato/Lato-ThinItalic.ttf") format("ttf");
+   }
+
+//COLOR
+
+$color--black : rgb(12, 12, 12);
+$color--grey : rgb(112, 112, 112);
+$color--orange: rgb(255, 136, 0);
+$color--green: rgb(61, 195, 113);
+
+//effect
+
+@keyframes left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

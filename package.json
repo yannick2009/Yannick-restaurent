@@ -1,0 +1,14 @@
+{
+  "name": "yannick-restaurent",
+  "version": "1.0.0",
+  "description": "site web de restauration",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "author": "Kouakou Kouamé Yannick",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

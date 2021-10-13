@@ -1,0 +1,71 @@
+@import './import';
+
+.meal {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    margin: 1rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(22, 22, 22, 0.3)), url('../img/background/background-2.jpg');
+    background-position: 0;
+    background-size: cover;
+
+    &_elements {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        &>* {
+            margin: 2rem 0;
+            color: white;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 4rem;
+            letter-spacing: .4rem;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        
+        button {
+            position: relative;
+            font-size: 2.5rem;
+            border: none;
+            border: 2px solid white;
+            background-color: transparent;
+            padding: 1rem;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            overflow: hidden;
+
+            &:hover {
+                border: 2px solid transparent;
+            }
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: $color--green;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                left: 0;
+               transform: translateX(-100%);
+               z-index: -1;
+               transition: all 1s;
+            }
+
+            &:hover::before {
+                transform: translateX(0);
+                color: $color--green;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import './import';
+
+.advice {
+    // background-color: red;
+    width: 80%;
+    margin: 6rem auto;
+    padding: 1rem;
+    // height: 45vh;
+
+    &_text {
+        text-align: center;
+        h2 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: $color--green;
+        }
+
+        p {
+            margin: 2rem auto;
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+            color: grey;
+            font-weight: 300;
+        }
+    }
+
+    &_layout {
+        // 
+        margin: 0rem;
+        // background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 3rem;
+
+        &-box {
+            margin-top: 2rem;
+            // background-color: beige;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% 20% 60%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+            justify-items: center;
+            align-items: center; 
+            padding: 2rem;
+            i {
+                color: $color--green;
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                width: 80%;
+                color: grey;
+                font-style: italic;
+            }
+        }
+    }
+}
